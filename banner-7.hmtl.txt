@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+  <style>
+.banner1,.banner2, .banner3{
+	overflow:hidden !important;
+}
+    .text-box {
+      width: 600px;
+      position: absolute;
+      bottom: 0;
+      top: 200px;
+      left: 0;
+	  right:0;
+	  margin-right:auto;
+	  margin-left:auto;
+      color: #BBB9B9;
+      text-align: center;
+      
+    }
+    .text-box h1 {
+      margin-bottom: 30px;
+      font-size: 44px;
+      color: #fff;
+      letter-spacing: 1px;
+      /* transform: scale(0.94); */
+  /* animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1); */
+  max-width: 40ch;
+    }
+    .text-box p {
+      font-size: 26px;
+      line-height: 35px;
+      margin-top: 60px;
+      color: #ffff;
+      letter-spacing: 1px;
+      animation-delay: 0.6s;
+    }
+    @keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s ease-out 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.4s ease-out 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.7s ease-out 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 1s ease-out 0.4s forwards  cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 1.4s ease-out 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 1.7s ease-out 0.6s  forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 2s ease-out 0.7s forwards  cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 2.4s ease-out 0.8s forwards  cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 2.7s ease-out 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 3s ease-out 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 3.4s ease-out 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 3.7s ease-out 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 4s ease-out 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 4.4s ease-out 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 4.7s ease-out 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 5s ease-out 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 5.4s ease-out 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 5.7s ease-out 1.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+ .text-box{
+      animation: fadeIn 6s;
+    }
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+ .line {
+    background: #EA781B;
+    height: 5px;
+    width: 0;
+    position: absolute;
+    left: 35%;
+    animation: animateLine 2s ease-in-out forwards;
+}
+    @keyframes animateLine {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 150px;
+      }
+    }
+    .owl-carousel-home-banner img {
+      vertical-align: middle;
+      max-width: 100%;
+      width: 100%;
+		height:85vh;
+      animation: zoom 30s infinite;
+      transform-origin: center center;
+    }
+    @keyframes zoom {
+      0% {
+        transform: scale(1.15);
+      }
+      50% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.15);
+      }
+    }
+.owl-carousel-home-banner .owl-nav, .owl-carousel-home-banner .owl-dots{
+	display:none !important;
+}
+
+
+ 
+  </style>
+</head>
+<body>
+
+  <div class="owl-carousel owl-carousel-home-banner owl-theme">
+    <div class="item">  
+      <div class="banner1">
+        <img src="1.jpg" />
+        <div class="text-box text-box1">
+          <h1>  
+            <span>AFRICA'S</span>
+            <span>LEADING</span>
+            <span>BPO</span>
+          </h1>
+          <div class="line"></div>
+          <p>   
+                
+            <span>Determined,</span>
+            <span>Engaged</span>
+            <span>And</span>
+            <span>Energized</span>
+            <span>Spearheading</span>
+            <span>Investment</span>
+            <span>Across</span>
+            <span>The</span>
+            <span>Continent</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="item">  
+      <div class="banner2">
+        <img src="2.jpg" />
+        <div class="text-box text-box2">
+          <h1>
+            <span>14</span>   
+            <span>SITES</span>
+            <span>ACROSS</span>
+            <span>AFRICA</span>
+          </h1>
+          <div class="line"></div>
+            <p>
+              <span>Growing</span>
+              <span>in</span>
+              <span>Capacity</span>
+              <span>&</span>
+              <span>Capability</span>
+              <span>Across</span>
+              <span>The</span>
+              <span>Continent</span>          
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="item">  
+      <div class="banner3">
+        <img src="3.jpg" />
+        <div class="text-box text-box3">
+          <h1>
+            <span>IMPACT</span>   
+            <span>SOURCING</span>
+            <span>UPLIFTING</span>
+            <span>COMMUNITIES</span>
+          </h1>
+          <div class="line"></div>
+          <p>
+           <span>Impact</span>
+           <span>Sourcing</span>
+           <span>Pioneers</span>
+           <span>Making</span>
+           <span>A</span>
+           <span>Difference</span> 
+           <span>In</span>
+           <span>The</span> 
+           <span>Markets</span>
+           <span>We</span>
+           <span>Operate</span> 
+           <span>In</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $(document).ready(function() {
+      var owl = $('.owl-carousel-home-banner').owlCarousel({
+        loop: true,
+        margin: 0,
+        // autoplay: true,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true
+          },
+          600: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            nav: true,
+            loop: true
+          }
+        }
+      });
+  var textBox1 = $('.text-box1');
+  var textBox2 = $('.text-box2');
+  var textBox3 = $('.text-box3');
+
+  // Apply animations to elements within each slider with different delays
+  textBox1.find('span').each(function(index) {
+    $(this).css('animation', `fade-in 0.8s ${index * 0.3}s forwards cubic-bezier(0.11, 0, 0.5, 0)`);
+  });
+
+  textBox2.find('span').each(function(index) {
+    $(this).css('animation', `fade-in 0.8s ${index * 0.5}s forwards cubic-bezier(0.11, 0, 0.5, 0)`);
+  });
+
+  textBox3.find('span').each(function(index) {
+    $(this).css('animation', `fade-in 0.8s ${index * 0.7}s forwards cubic-bezier(0.11, 0, 0.5, 0)`);
+  });
+  });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
