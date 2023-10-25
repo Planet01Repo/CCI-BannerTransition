@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+  <style>
+.banner1,.banner2, .banner3{
+	overflow:hidden !important;
+}
+    .text-box {
+      width: 600px;
+      position: absolute;
+      bottom: 0;
+      top: 200px;
+      left: 0;
+	    right:0;
+	   margin-right:auto;
+	   margin-left:auto;
+      color: #BBB9B9;
+      text-align: center;
+      
+    }
+    .text-box span {
+      /* margin-bottom: 30px; */
+      /* font-size: 44px; */
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+
+    /* .text-box p {
+      font-size: 24px;
+      line-height: 35px; */
+      /* margin-top: 60px; */
+      /* color: #ffff;
+      letter-spacing: 1px;
+      animation-delay: 0.6s;
+    } */
+
+ .line {
+    background: #EA781B;
+    height: 5px;
+    width: 0;
+    position: absolute;
+    left: 35%;
+    animation: animateLine 2s ease-in-out forwards;
+}
+    @keyframes animateLine {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 150px;
+      }
+    }
+    .owl-carousel-home-banner img {
+      vertical-align: middle;
+      max-width: 100%;
+      width: 100%;
+		height:85vh;
+      animation: zoom 30s infinite;
+      transform-origin: center center;
+    }
+    @keyframes zoom {
+      0% {
+        transform: scale(1.15);
+      }
+      50% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.15);
+      }
+    }
+.owl-carousel-home-banner .owl-nav, .owl-carousel-home-banner .owl-dots{
+	display:none !important;
+}
+
+@keyframes showTopText {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes showBottomText {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animated-title {
+  color: #222;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #fff;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="owl-carousel owl-carousel-home-banner owl-theme">
+    <div class="item">  
+      <div class="banner1">
+        <img src="1.jpg" />
+        <div class="text-box text-box1">
+          <div class="animated-title">
+            <div class="text-top">
+              <div>
+                <span style="font-size: 44px;">AFRICA'S LEADING BPO</span>
+                <div class="line"></div>
+                <span style="font-size: 26px;margin-top: 60px;">Determined, Engaged And Energized Spearheading Investment Across The Continent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">  
+      <div class="banner2">
+        <img src="2.jpg" />
+        <div class="text-box text-box2">
+          <div class="sample">
+            <div class="text-top">
+              <div>
+                <span style="font-size: 44px;">14 SITES ACROSS AFRICA</span>
+                <div class="line"></div>
+                <span style="font-size: 26px;margin-top: 60px;"> Growing in Capacity & Capability Across The Continent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">  
+      <div class="banner3">
+        <img src="3.jpg" />
+        <div class="text-box text-box3">
+          <div class="sample">
+            <div class="text-top">
+              <div>
+                <span style="font-size: 44px;">IMPACT SOURCING UPLIFTING COMMUNITIES</span>
+                <div class="line"></div>
+                <span style="font-size: 26px;margin-top: 60px;">   Impact Sourcing Pioneers Making A Difference In The Markets We Operate In</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $(document).ready(function() {
+      var owl = $('.owl-carousel-home-banner').owlCarousel({
+        loop: true,
+        margin: 0,
+        // autoplay: true,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true
+          },
+          600: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            nav: true,
+            loop: true
+          }
+        }
+      });
+      // / Listen for the Owl Carousel 'changed' event
+  owl.on('changed.owl.carousel', function (event) {
+    console.log('Slide changed:', event.item.index);
+    
+    // Remove the 'animated-title' class from all .sample elements
+    $('.owl-carousel-home-banner .sample').removeClass('animated-title');
+    
+    // Get the index of the currently active slide
+    var currentSlide = event.item.index;
+    
+    // Add the 'animated-title' class to the .sample element of the active slide
+    $('.owl-carousel-home-banner .item').eq(currentSlide).find('.sample').addClass('animated-title');
+  });
+  });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
